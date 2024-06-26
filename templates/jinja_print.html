@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: cadetblue;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The details are mentioned below:</h1>
+    {% if age > 18 %}
+        <h2>Name: {{name}}</h2>
+        <h2>age: {{age}}</h2>
+    {% else %}
+        <h1>You are underage!!!</h1>
+    {% endif %}
+</body>
+</html>
